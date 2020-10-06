@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url("/Big/assets/images/login_bg.jpg")no-repeat center;
+    background-size: cover;
+}
+
+#logo {
+    margin-top: 10px;
+}
+
+
+.layui-card {
+    position: absolute;
+    width: 400px;
+    height: 310px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layui-card-header {
+    background: url("/Big/assets/images/login_title.png")no-repeat center;
+}
+
+#reg {
+    display: none;
+}
