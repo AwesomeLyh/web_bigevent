@@ -31,7 +31,7 @@ $(function () {
                 password: $("#form_reg [name=password]").val()
             },
             success: function (response) {
-                if (response.ststus !== 0) return layer.msg(response.message);
+                if (response.status !== 0) return layer.msg(response.message);
                 layer.msg("注册成功，请登录");
                 $("#reg-btn").click();
             }
@@ -46,10 +46,10 @@ $(function () {
             url: "/api/login",
             data: $(this).serialize(),
             success: function (response) {
-                if (response.ststus !== 0) return layer.msg(response.message)
+                if (response.status !== 0) return layer.msg(response.message);
                 layer.msg("登录成功");
-                localStorage.setItem("token", response.token)
-                // location.href
+                localStorage.setItem("token", response.token);
+                location.href = "/Big/index.html"
             }
         });
     });
