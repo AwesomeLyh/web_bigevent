@@ -49,7 +49,7 @@ $(function () {
                 if (response.status !== 0) return layer.msg(response.message);
                 layer.msg("登录成功");
                 localStorage.setItem("token", response.token);
-                location.href = "/Big/index.html"
+                location.href = "/Big/index.html";
             }
         });
     });
