@@ -1,0 +1,35 @@
+.layui-logo {
+    background: url("/Big/assets/images/logo.png")no-repeat center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+}
