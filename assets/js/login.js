@@ -25,7 +25,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             type: "post",
-            url: "http://ajax.frontend.itheima.net/api/reguser",
+            url: "/api/reguser",
             data: {
                 username: $("#form_reg [name=username]").val(),
                 password: $("#form_reg [name=password]").val()
@@ -34,6 +34,22 @@ $(function () {
                 if (response.ststus !== 0) return layer.msg(response.message);
                 layer.msg("注册成功，请登录");
                 $("#reg-btn").click();
+            }
+        });
+    });
+
+    //登录表单的提交事件
+    $("#form_login").on("submit", function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "post",
+            url: "/api/login",
+            data: $(this).serialize(),
+            success: function (response) {
+                if (response.ststus !== 0) return layer.msg(response.message)
+                layer.msg("登录成功");
+                localStorage.setItem("token", response.token)
+                // location.href
             }
         });
     });

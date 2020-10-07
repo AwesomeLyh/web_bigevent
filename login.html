@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/Big/assets/css/login.css">
     <link rel="stylesheet" href="/Big/assets/lib/layui/css/layui.css">
     <script src="/Big/assets/lib/jquery.js"></script>
+    <!-- 添加请求根路径 -->
+    <script src="/Big/assets/js/baseAPI.js"></script>
     <script src="/Big/assets/js/login.js"></script>
     <script src="/Big/assets/lib/layui/layui.all.js"></script>
 </head>
@@ -37,8 +39,8 @@
                         <input type="password" name="password" lay-verify="required|pwd" autocomplete="off"
                             placeholder="请输入密码" class="layui-input">
                     </div>
-                    <div class="layui-form-item"><button type="submit"
-                            class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit=""
+                    <div class="layui-form-item">
+                        <button type="submit" class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit=""
                             lay-filter="demo1">登录</button>
                     </div>
                     <div class="layui-form-item">
