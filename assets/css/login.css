@@ -23,6 +23,7 @@ body {
 }
 
 .layui-card-header {
+    height: 60px;
     background: url("/Big/assets/images/login_title.png")no-repeat center;
 }
 
@@ -42,4 +43,10 @@ body {
 
 .layui-input {
     padding-left: 32px !important;
+}
+
+#reg-btn,
+#login-btn {
+    display: flex;
+    justify-content: flex-end;
 }

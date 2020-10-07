@@ -14,7 +14,7 @@ $(function () {
         pwd: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
         repwd: function (val) {
             let pwd = $("#reg-box [name=password]").val()
-            if (pwd !== val) return "两次密码不一致"
+            if (pwd !== val) return "两次密码不一致0"
         }
     })
 })
