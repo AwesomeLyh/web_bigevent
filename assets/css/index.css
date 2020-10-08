@@ -33,3 +33,13 @@ iframe {
     font-size: 12px;
     user-select: none;
 }
+
+.layui-icon-home {
+    position: relative;
+    left: 0px;
+}
+
+.layui-nav-item dd a span {
+    position: relative;
+    left: -2px;
+}
