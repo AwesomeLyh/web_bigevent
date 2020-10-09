@@ -28,7 +28,8 @@ $(function () {
             // data: JSON.stringify(user_info),
             data: $(this).serialize(),
             success: function (response) {
-                if (response.status === 0) return layer.msg(response.message);
+                if (response.status !== 0) return layer.msg(response.message);
+                
                 // 调用父页面的方法，重新渲染用户头像
                 window.parent.getUserinfo();
             }
