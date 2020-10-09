@@ -20,6 +20,7 @@ $(function () {
 
     //渲染用户数据
     function renderUserData(user) {
+        console.log(user);
         var name = user.nickname || user.username;
         $('#welcome').html('欢迎&nbsp;,' + name)
         var headPortrait = user.user_pic;
@@ -37,7 +38,6 @@ $(function () {
     function clearToken() {
         localStorage.removeItem("token")
     }
-
 
     //退出登录
     $("#exit").on("click", function (e) {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Big/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/Big/assets/css/user/reset_pasword.css">
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">密码重置</div>
+        <div class="layui-card-body">
+            <form class="layui-form" action="" lay-filter="reset_pwd" id="reset_pwd">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">原密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="oldPwd" lay-verify="required|pwd" autocomplete="off" placeholder=""
+                            class="layui-input">
+                    </div>
+                </div>
+                <!-- 昵称 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">新密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="newPwd" lay-verify="required|pwd|samePwd" autocomplete="off"
+                            placeholder="" class="layui-input">
+                    </div>
+                </div>
+                <!-- 邮箱 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">再次输入</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="rePwd" lay-verify="required|pwd|newPwd" autocomplete="off"
+                            placeholder="" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                        <button type="reset" id="btn_reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!-- 引入js  -->
+<script src="/Big/assets/lib/jquery.js"></script>
+<script src="/Big/assets/lib/layui/layui.all.js"></script>
+<script src="/Big/assets/js/baseAPI.js"></script>
+<script src="/Big/assets/js/user/reset_password.js"></script>
+
+</html>
