@@ -1,6 +1,6 @@
 $(function () {
   $.ajaxPrefilter(function (option) {
-    option.url = "http://ajax.frontend.itheima.net" + option.url;
+    option.url = "http://127.0.0.1:3000" + option.url;
     // 在BaseApi 全局挂载对调用权限接口的判断，给请求加上headers
     if (option.url.indexOf("/my/") !== -1) {
       option.headers = {
